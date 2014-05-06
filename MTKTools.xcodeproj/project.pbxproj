@@ -1,0 +1,465 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D5E39AC1918D21B0041E74A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39AB1918D21B0041E74A /* Cocoa.framework */; };
+		1D5E39B61918D21B0041E74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5E39B41918D21B0041E74A /* InfoPlist.strings */; };
+		1D5E39BA1918D21B0041E74A /* MTKTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39B91918D21B0041E74A /* MTKTools.m */; };
+		1D5E39C11918D21B0041E74A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39C01918D21B0041E74A /* XCTest.framework */; };
+		1D5E39C21918D21B0041E74A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39AB1918D21B0041E74A /* Cocoa.framework */; };
+		1D5E39C51918D21B0041E74A /* MTKTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39A81918D21B0041E74A /* MTKTools.framework */; };
+		1D5E39CB1918D21B0041E74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5E39C91918D21B0041E74A /* InfoPlist.strings */; };
+		1D5E39CD1918D21B0041E74A /* MTKToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1D5E39C31918D21B0041E74A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1D5E399F1918D21B0041E74A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1D5E39A71918D21B0041E74A;
+			remoteInfo = MTKTools;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1D5E39A81918D21B0041E74A /* MTKTools.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MTKTools.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5E39AB1918D21B0041E74A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1D5E39AE1918D21B0041E74A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D5E39AF1918D21B0041E74A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1D5E39B01918D21B0041E74A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1D5E39B31918D21B0041E74A /* MTKTools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTKTools-Info.plist"; sourceTree = "<group>"; };
+		1D5E39B51918D21B0041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D5E39B71918D21B0041E74A /* MTKTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTKTools-Prefix.pch"; sourceTree = "<group>"; };
+		1D5E39B81918D21B0041E74A /* MTKTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKTools.h; sourceTree = "<group>"; };
+		1D5E39B91918D21B0041E74A /* MTKTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKTools.m; sourceTree = "<group>"; };
+		1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTKToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5E39C01918D21B0041E74A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1D5E39C81918D21B0041E74A /* MTKToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTKToolsTests-Info.plist"; sourceTree = "<group>"; };
+		1D5E39CA1918D21B0041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKToolsTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D5E39A41918D21B0041E74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39AC1918D21B0041E74A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5E39BC1918D21B0041E74A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39C21918D21B0041E74A /* Cocoa.framework in Frameworks */,
+				1D5E39C51918D21B0041E74A /* MTKTools.framework in Frameworks */,
+				1D5E39C11918D21B0041E74A /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1D5E399E1918D21B0041E74A = {
+			isa = PBXGroup;
+			children = (
+				1D5E39B11918D21B0041E74A /* MTKTools */,
+				1D5E39C61918D21B0041E74A /* MTKToolsTests */,
+				1D5E39AA1918D21B0041E74A /* Frameworks */,
+				1D5E39A91918D21B0041E74A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1D5E39A91918D21B0041E74A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39A81918D21B0041E74A /* MTKTools.framework */,
+				1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1D5E39AA1918D21B0041E74A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39AB1918D21B0041E74A /* Cocoa.framework */,
+				1D5E39C01918D21B0041E74A /* XCTest.framework */,
+				1D5E39AD1918D21B0041E74A /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1D5E39AD1918D21B0041E74A /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39AE1918D21B0041E74A /* Foundation.framework */,
+				1D5E39AF1918D21B0041E74A /* CoreData.framework */,
+				1D5E39B01918D21B0041E74A /* AppKit.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1D5E39B11918D21B0041E74A /* MTKTools */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39B81918D21B0041E74A /* MTKTools.h */,
+				1D5E39B91918D21B0041E74A /* MTKTools.m */,
+				1D5E39B21918D21B0041E74A /* Supporting Files */,
+			);
+			path = MTKTools;
+			sourceTree = "<group>";
+		};
+		1D5E39B21918D21B0041E74A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39B31918D21B0041E74A /* MTKTools-Info.plist */,
+				1D5E39B41918D21B0041E74A /* InfoPlist.strings */,
+				1D5E39B71918D21B0041E74A /* MTKTools-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D5E39C61918D21B0041E74A /* MTKToolsTests */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */,
+				1D5E39C71918D21B0041E74A /* Supporting Files */,
+			);
+			path = MTKToolsTests;
+			sourceTree = "<group>";
+		};
+		1D5E39C71918D21B0041E74A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39C81918D21B0041E74A /* MTKToolsTests-Info.plist */,
+				1D5E39C91918D21B0041E74A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1D5E39A51918D21B0041E74A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		1D5E39A71918D21B0041E74A /* MTKTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5E39D01918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKTools" */;
+			buildPhases = (
+				1D5E39A31918D21B0041E74A /* Sources */,
+				1D5E39A41918D21B0041E74A /* Frameworks */,
+				1D5E39A51918D21B0041E74A /* Headers */,
+				1D5E39A61918D21B0041E74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MTKTools;
+			productName = MTKTools;
+			productReference = 1D5E39A81918D21B0041E74A /* MTKTools.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1D5E39BE1918D21B0041E74A /* MTKToolsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D5E39D31918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */;
+			buildPhases = (
+				1D5E39BB1918D21B0041E74A /* Sources */,
+				1D5E39BC1918D21B0041E74A /* Frameworks */,
+				1D5E39BD1918D21B0041E74A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1D5E39C41918D21B0041E74A /* PBXTargetDependency */,
+			);
+			name = MTKToolsTests;
+			productName = MTKToolsTests;
+			productReference = 1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1D5E399F1918D21B0041E74A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Maxthon Chan";
+				TargetAttributes = {
+					1D5E39BE1918D21B0041E74A = {
+						TestTargetID = 1D5E39A71918D21B0041E74A;
+					};
+				};
+			};
+			buildConfigurationList = 1D5E39A21918D21B0041E74A /* Build configuration list for PBXProject "MTKTools" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1D5E399E1918D21B0041E74A;
+			productRefGroup = 1D5E39A91918D21B0041E74A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D5E39A71918D21B0041E74A /* MTKTools */,
+				1D5E39BE1918D21B0041E74A /* MTKToolsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D5E39A61918D21B0041E74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39B61918D21B0041E74A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5E39BD1918D21B0041E74A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39CB1918D21B0041E74A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D5E39A31918D21B0041E74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39BA1918D21B0041E74A /* MTKTools.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1D5E39BB1918D21B0041E74A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D5E39CD1918D21B0041E74A /* MTKToolsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1D5E39C41918D21B0041E74A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1D5E39A71918D21B0041E74A /* MTKTools */;
+			targetProxy = 1D5E39C31918D21B0041E74A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1D5E39B41918D21B0041E74A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5E39B51918D21B0041E74A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1D5E39C91918D21B0041E74A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1D5E39CA1918D21B0041E74A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1D5E39CE1918D21B0041E74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1D5E39CF1918D21B0041E74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1D5E39D11918D21B0041E74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
+				INFOPLIST_FILE = "MTKTools/MTKTools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		1D5E39D21918D21B0041E74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				FRAMEWORK_VERSION = A;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
+				INFOPLIST_FILE = "MTKTools/MTKTools-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		1D5E39D41918D21B0041E74A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTKTools.framework/Versions/A/MTKTools";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MTKToolsTests/MTKToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1D5E39D51918D21B0041E74A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTKTools.framework/Versions/A/MTKTools";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
+				INFOPLIST_FILE = "MTKToolsTests/MTKToolsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D5E39A21918D21B0041E74A /* Build configuration list for PBXProject "MTKTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5E39CE1918D21B0041E74A /* Debug */,
+				1D5E39CF1918D21B0041E74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1D5E39D01918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5E39D11918D21B0041E74A /* Debug */,
+				1D5E39D21918D21B0041E74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1D5E39D31918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D5E39D41918D21B0041E74A /* Debug */,
+				1D5E39D51918D21B0041E74A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1D5E399F1918D21B0041E74A /* Project object */;
+}
