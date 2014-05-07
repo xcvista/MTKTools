@@ -21,7 +21,7 @@
     
     while ([thisPath count] && [basePath count])
     {
-        if ([[thisPath firstObject] isEqual:[basePath firstObject]])
+        if ([thisPath[0] isEqual:basePath[0]])
         {
             [thisPath removeObjectAtIndex:0];
             [basePath removeObjectAtIndex:0];
