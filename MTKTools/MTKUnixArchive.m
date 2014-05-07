@@ -87,3 +87,20 @@
 }
 
 @end
+
+@implementation MTKArchivedFile (MTKUnixArchive)
+
+- (NSData *)unixArchivedData
+{
+    NSMutableData *odata = [NSMutableData dataWithCapacity:[self.data length] + sizeof(struct ar_hdr)];
+    NSString *header = [NSString stringWithFormat:@"%16s%12ld%6u%6u%8o%10lu%2s",
+                        [self.fileName UTF8String], (time_t)[self.modificationTime timeIntervalSince1970], self.owner, self.groupOwner, self.fileMode, [self.data length], ARFMAG];
+    [odata appendData:[header dataUsingEncoding:NSUTF8StringEncoding]];
+    [odata appendData:[self data]];
+    if ([odata length] & 1)
+        [odata appendBytes:"\n" length:1];
+    
+    return [odata copy];
+}
+
+@end

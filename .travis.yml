@@ -2,3 +2,4 @@
 language: objective-c
 xcode_project: MTKTools.xcodeproj
 xcode_scheme: MTKTools
+xcode_sdk: macosx10.8 macosx10.9
