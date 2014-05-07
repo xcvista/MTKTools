@@ -35,7 +35,7 @@
     
     CCCryptorRef cryptor;
     
-    CCCryptorCreateWithMode(kCCEncrypt, kCCModeCFB, kCCAlgorithmAES, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
+    CCCryptorCreateWithMode(kCCEncrypt, kCCModeCFB, kCCAlgorithmAES128, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
     
     NSMutableData *odata = [NSMutableData dataWithLength:CCCryptorGetOutputLength(cryptor, [self length], true)];
     void *cp = [odata mutableBytes];
@@ -73,7 +73,7 @@
     
     CCCryptorRef cryptor;
     
-    CCCryptorCreateWithMode(kCCDecrypt, kCCModeCFB, kCCAlgorithmAES, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
+    CCCryptorCreateWithMode(kCCDecrypt, kCCModeCFB, kCCAlgorithmAES128, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
     
     NSMutableData *odata = [NSMutableData dataWithLength:CCCryptorGetOutputLength(cryptor, [self length], true)];
     void *cp = [odata mutableBytes];
@@ -111,7 +111,7 @@
     
     CCCryptorRef cryptor;
     
-    CCCryptorCreateWithMode(kCCEncrypt, kCCModeOFB, kCCAlgorithmAES, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
+    CCCryptorCreateWithMode(kCCEncrypt, kCCModeOFB, kCCAlgorithmAES128, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, 0, &cryptor);
     
     NSMutableData *odata = [NSMutableData dataWithLength:CCCryptorGetOutputLength(cryptor, [self length], true)];
     void *cp = [odata mutableBytes];
@@ -149,7 +149,7 @@
     
     CCCryptorRef cryptor;
     
-    CCCryptorCreateWithMode(kCCEncrypt, kCCModeCTR, kCCAlgorithmAES, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, kCCModeOptionCTR_BE, &cryptor);
+    CCCryptorCreateWithMode(kCCEncrypt, kCCModeCTR, kCCAlgorithmAES128, ccNoPadding, [iiv bytes], [ikey bytes], [ikey length], NULL, 0, 0, kCCModeOptionCTR_BE, &cryptor);
     
     NSMutableData *odata = [NSMutableData dataWithLength:CCCryptorGetOutputLength(cryptor, [self length], true)];
     void *cp = [odata mutableBytes];
