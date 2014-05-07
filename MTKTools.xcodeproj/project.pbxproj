@@ -9,16 +9,50 @@
 /* Begin PBXBuildFile section */
 		1D5E39AC1918D21B0041E74A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39AB1918D21B0041E74A /* Cocoa.framework */; };
 		1D5E39B61918D21B0041E74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5E39B41918D21B0041E74A /* InfoPlist.strings */; };
-		1D5E39BA1918D21B0041E74A /* MTKTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39B91918D21B0041E74A /* MTKTools.m */; };
-		1D5E39C11918D21B0041E74A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39C01918D21B0041E74A /* XCTest.framework */; };
-		1D5E39C21918D21B0041E74A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39AB1918D21B0041E74A /* Cocoa.framework */; };
-		1D5E39C51918D21B0041E74A /* MTKTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39A81918D21B0041E74A /* MTKTools.framework */; };
-		1D5E39CB1918D21B0041E74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5E39C91918D21B0041E74A /* InfoPlist.strings */; };
-		1D5E39CD1918D21B0041E74A /* MTKToolsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */; };
+		1D5E39D91918D6930041E74A /* NSData+MTKBitwiseOperations.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E39D71918D6930041E74A /* NSData+MTKBitwiseOperations.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39D81918D6930041E74A /* NSData+MTKBitwiseOperations.m */; };
+		1D5E39E11918E1750041E74A /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39E01918E1750041E74A /* SenTestingKit.framework */; };
+		1D5E39E71918E1750041E74A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D5E39E51918E1750041E74A /* InfoPlist.strings */; };
+		1D5E39F01918E1940041E74A /* MTKTools.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E39A81918D21B0041E74A /* MTKTools.framework */; };
+		1D5E39F11918E1A80041E74A /* MTKTools.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E39B81918D21B0041E74A /* MTKTools.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E39F31918E1D70041E74A /* MTKBitwiseOperationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39F21918E1D70041E74A /* MTKBitwiseOperationTest.m */; };
+		1D5E39F51918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39F41918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m */; };
+		1D5E39F71918E4890041E74A /* MTKBitwiseOperationBigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39F61918E4890041E74A /* MTKBitwiseOperationBigTest.m */; };
+		1D5E39FA1918F9D80041E74A /* NSData+MTKSecureHashing.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E39F81918F9D80041E74A /* NSData+MTKSecureHashing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E39FB1918F9D80041E74A /* NSData+MTKSecureHashing.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39F91918F9D80041E74A /* NSData+MTKSecureHashing.m */; };
+		1D5E39FE1919061C0041E74A /* NSData+MTKHMAC.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E39FC1919061C0041E74A /* NSData+MTKHMAC.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E39FF1919061C0041E74A /* NSData+MTKHMAC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E39FD1919061C0041E74A /* NSData+MTKHMAC.m */; };
+		1D5E3A021919143D0041E74A /* NSData+MTKRandomBytes.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A001919143D0041E74A /* NSData+MTKRandomBytes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A031919143D0041E74A /* NSData+MTKRandomBytes.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A011919143D0041E74A /* NSData+MTKRandomBytes.m */; };
+		1D5E3A06191919000041E74A /* NSData+MTKAES.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A04191919000041E74A /* NSData+MTKAES.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A07191919000041E74A /* NSData+MTKAES.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A05191919000041E74A /* NSData+MTKAES.m */; };
+		1D5E3A0919191B2C0041E74A /* MTKAESCryptographyTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A0819191B2C0041E74A /* MTKAESCryptographyTest.m */; };
+		1D5E3A11191927D30041E74A /* NSData+MTKMiniScramble.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A0F191927D30041E74A /* NSData+MTKMiniScramble.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A12191927D30041E74A /* NSData+MTKMiniScramble.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A10191927D30041E74A /* NSData+MTKMiniScramble.m */; };
+		1D5E3A1419192C460041E74A /* MTKMiniScrambleTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A1319192C460041E74A /* MTKMiniScrambleTest.m */; };
+		1D5E3A1819192F680041E74A /* NSData+MTKCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A1619192F680041E74A /* NSData+MTKCompression.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A1919192F680041E74A /* NSData+MTKCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A1719192F680041E74A /* NSData+MTKCompression.m */; };
+		1D5E3A21191950720041E74A /* MTKFileInputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A1F191950720041E74A /* MTKFileInputStream.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A22191950720041E74A /* MTKFileInputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A20191950720041E74A /* MTKFileInputStream.m */; };
+		1D5E3A2419195A770041E74A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E3A2319195A770041E74A /* libz.dylib */; };
+		1D5E3A2619195A7E0041E74A /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D5E3A2519195A7E0041E74A /* libbz2.dylib */; };
+		1D5E3A2A191960130041E74A /* MTKArchivedFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A28191960130041E74A /* MTKArchivedFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A2B191960130041E74A /* MTKArchivedFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A29191960130041E74A /* MTKArchivedFile.m */; };
+		1D5E3A2D1919EFB70041E74A /* MTKAESBigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A2C1919EFB70041E74A /* MTKAESBigTest.m */; };
+		1D5E3A2F1919F00B0041E74A /* MTKMiniScrambleBigTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A2E1919F00B0041E74A /* MTKMiniScrambleBigTest.m */; };
+		1D5E3A311919F2F50041E74A /* MTKFileStatTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A301919F2F50041E74A /* MTKFileStatTest.m */; };
+		1D5E3A34191A014A0041E74A /* NSString+MTKRelativePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A32191A014A0041E74A /* NSString+MTKRelativePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A35191A014A0041E74A /* NSString+MTKRelativePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A33191A014A0041E74A /* NSString+MTKRelativePath.m */; };
+		1D5E3A37191A03460041E74A /* MTKStringPathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A36191A03460041E74A /* MTKStringPathTest.m */; };
+		1D5E3A3A191A04F60041E74A /* NSURL+MTKRelativePath.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A38191A04F60041E74A /* NSURL+MTKRelativePath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A3B191A04F60041E74A /* NSURL+MTKRelativePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A39191A04F60041E74A /* NSURL+MTKRelativePath.m */; };
+		1D5E3A3E191A13310041E74A /* MTKUnixArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A3C191A13310041E74A /* MTKUnixArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A3F191A13310041E74A /* MTKUnixArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */; };
+		1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1D5E39C31918D21B0041E74A /* PBXContainerItemProxy */ = {
+		1D5E39EB1918E1750041E74A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 1D5E399F1918D21B0041E74A /* Project object */;
 			proxyType = 1;
@@ -35,14 +69,52 @@
 		1D5E39B01918D21B0041E74A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		1D5E39B31918D21B0041E74A /* MTKTools-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTKTools-Info.plist"; sourceTree = "<group>"; };
 		1D5E39B51918D21B0041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1D5E39B71918D21B0041E74A /* MTKTools-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MTKTools-Prefix.pch"; sourceTree = "<group>"; };
 		1D5E39B81918D21B0041E74A /* MTKTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKTools.h; sourceTree = "<group>"; };
-		1D5E39B91918D21B0041E74A /* MTKTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKTools.m; sourceTree = "<group>"; };
-		1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTKToolsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D5E39C01918D21B0041E74A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1D5E39C81918D21B0041E74A /* MTKToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTKToolsTests-Info.plist"; sourceTree = "<group>"; };
-		1D5E39CA1918D21B0041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTKToolsTests.m; sourceTree = "<group>"; };
+		1D5E39D61918D2C80041E74A /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1D5E39D71918D6930041E74A /* NSData+MTKBitwiseOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKBitwiseOperations.h"; sourceTree = "<group>"; };
+		1D5E39D81918D6930041E74A /* NSData+MTKBitwiseOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKBitwiseOperations.m"; sourceTree = "<group>"; };
+		1D5E39DF1918E1750041E74A /* MTKToolsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTKToolsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D5E39E01918E1750041E74A /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		1D5E39E41918E1750041E74A /* MTKToolsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MTKToolsTests-Info.plist"; sourceTree = "<group>"; };
+		1D5E39E61918E1750041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1D5E39F21918E1D70041E74A /* MTKBitwiseOperationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBitwiseOperationTest.m; sourceTree = "<group>"; };
+		1D5E39F41918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBitwiseOperationIUnalignedTest.m; sourceTree = "<group>"; };
+		1D5E39F61918E4890041E74A /* MTKBitwiseOperationBigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKBitwiseOperationBigTest.m; sourceTree = "<group>"; };
+		1D5E39F81918F9D80041E74A /* NSData+MTKSecureHashing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKSecureHashing.h"; sourceTree = "<group>"; };
+		1D5E39F91918F9D80041E74A /* NSData+MTKSecureHashing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKSecureHashing.m"; sourceTree = "<group>"; };
+		1D5E39FC1919061C0041E74A /* NSData+MTKHMAC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKHMAC.h"; sourceTree = "<group>"; };
+		1D5E39FD1919061C0041E74A /* NSData+MTKHMAC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKHMAC.m"; sourceTree = "<group>"; };
+		1D5E3A001919143D0041E74A /* NSData+MTKRandomBytes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKRandomBytes.h"; sourceTree = "<group>"; };
+		1D5E3A011919143D0041E74A /* NSData+MTKRandomBytes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKRandomBytes.m"; sourceTree = "<group>"; };
+		1D5E3A04191919000041E74A /* NSData+MTKAES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKAES.h"; sourceTree = "<group>"; };
+		1D5E3A05191919000041E74A /* NSData+MTKAES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKAES.m"; sourceTree = "<group>"; };
+		1D5E3A0819191B2C0041E74A /* MTKAESCryptographyTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKAESCryptographyTest.m; sourceTree = "<group>"; };
+		1D5E3A0A1919220C0041E74A /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = usr/lib/libcrypto.dylib; sourceTree = SDKROOT; };
+		1D5E3A0C1919221B0041E74A /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = usr/lib/libssl.dylib; sourceTree = SDKROOT; };
+		1D5E3A0F191927D30041E74A /* NSData+MTKMiniScramble.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKMiniScramble.h"; sourceTree = "<group>"; };
+		1D5E3A10191927D30041E74A /* NSData+MTKMiniScramble.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKMiniScramble.m"; sourceTree = "<group>"; };
+		1D5E3A1319192C460041E74A /* MTKMiniScrambleTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKMiniScrambleTest.m; sourceTree = "<group>"; };
+		1D5E3A1619192F680041E74A /* NSData+MTKCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKCompression.h"; sourceTree = "<group>"; };
+		1D5E3A1719192F680041E74A /* NSData+MTKCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKCompression.m"; sourceTree = "<group>"; };
+		1D5E3A1F191950720041E74A /* MTKFileInputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKFileInputStream.h; sourceTree = "<group>"; };
+		1D5E3A20191950720041E74A /* MTKFileInputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKFileInputStream.m; sourceTree = "<group>"; };
+		1D5E3A2319195A770041E74A /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		1D5E3A2519195A7E0041E74A /* libbz2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libbz2.dylib; path = usr/lib/libbz2.dylib; sourceTree = SDKROOT; };
+		1D5E3A28191960130041E74A /* MTKArchivedFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKArchivedFile.h; sourceTree = "<group>"; };
+		1D5E3A29191960130041E74A /* MTKArchivedFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKArchivedFile.m; sourceTree = "<group>"; };
+		1D5E3A2C1919EFB70041E74A /* MTKAESBigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKAESBigTest.m; sourceTree = "<group>"; };
+		1D5E3A2E1919F00B0041E74A /* MTKMiniScrambleBigTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKMiniScrambleBigTest.m; sourceTree = "<group>"; };
+		1D5E3A301919F2F50041E74A /* MTKFileStatTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKFileStatTest.m; sourceTree = "<group>"; };
+		1D5E3A32191A014A0041E74A /* NSString+MTKRelativePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MTKRelativePath.h"; sourceTree = "<group>"; };
+		1D5E3A33191A014A0041E74A /* NSString+MTKRelativePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MTKRelativePath.m"; sourceTree = "<group>"; };
+		1D5E3A36191A03460041E74A /* MTKStringPathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKStringPathTest.m; sourceTree = "<group>"; };
+		1D5E3A38191A04F60041E74A /* NSURL+MTKRelativePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MTKRelativePath.h"; sourceTree = "<group>"; };
+		1D5E3A39191A04F60041E74A /* NSURL+MTKRelativePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MTKRelativePath.m"; sourceTree = "<group>"; };
+		1D5E3A3C191A13310041E74A /* MTKUnixArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKUnixArchive.h; sourceTree = "<group>"; };
+		1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKUnixArchive.m; sourceTree = "<group>"; };
+		1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKUnixArchiveTest.m; sourceTree = "<group>"; };
+		1D5E3A42191A1E320041E74A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,17 +122,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5E3A2619195A7E0041E74A /* libbz2.dylib in Frameworks */,
+				1D5E3A2419195A770041E74A /* libz.dylib in Frameworks */,
 				1D5E39AC1918D21B0041E74A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D5E39BC1918D21B0041E74A /* Frameworks */ = {
+		1D5E39DC1918E1750041E74A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D5E39C21918D21B0041E74A /* Cocoa.framework in Frameworks */,
-				1D5E39C51918D21B0041E74A /* MTKTools.framework in Frameworks */,
-				1D5E39C11918D21B0041E74A /* XCTest.framework in Frameworks */,
+				1D5E39F01918E1940041E74A /* MTKTools.framework in Frameworks */,
+				1D5E39E11918E1750041E74A /* SenTestingKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,8 +143,10 @@
 		1D5E399E1918D21B0041E74A = {
 			isa = PBXGroup;
 			children = (
+				1D5E39D61918D2C80041E74A /* README */,
+				1D5E3A42191A1E320041E74A /* .gitignore */,
 				1D5E39B11918D21B0041E74A /* MTKTools */,
-				1D5E39C61918D21B0041E74A /* MTKToolsTests */,
+				1D5E39E21918E1750041E74A /* MTKToolsTests */,
 				1D5E39AA1918D21B0041E74A /* Frameworks */,
 				1D5E39A91918D21B0041E74A /* Products */,
 			);
@@ -81,7 +156,7 @@
 			isa = PBXGroup;
 			children = (
 				1D5E39A81918D21B0041E74A /* MTKTools.framework */,
-				1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */,
+				1D5E39DF1918E1750041E74A /* MTKToolsTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,8 +164,13 @@
 		1D5E39AA1918D21B0041E74A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1D5E3A2519195A7E0041E74A /* libbz2.dylib */,
+				1D5E3A2319195A770041E74A /* libz.dylib */,
+				1D5E3A0C1919221B0041E74A /* libssl.dylib */,
+				1D5E3A0A1919220C0041E74A /* libcrypto.dylib */,
 				1D5E39AB1918D21B0041E74A /* Cocoa.framework */,
 				1D5E39C01918D21B0041E74A /* XCTest.framework */,
+				1D5E39E01918E1750041E74A /* SenTestingKit.framework */,
 				1D5E39AD1918D21B0041E74A /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -110,7 +190,9 @@
 			isa = PBXGroup;
 			children = (
 				1D5E39B81918D21B0041E74A /* MTKTools.h */,
-				1D5E39B91918D21B0041E74A /* MTKTools.m */,
+				1D5E3A2719195FFE0041E74A /* Archives */,
+				1D5E3A1E191950570041E74A /* Streams */,
+				1D5E3A1519192F410041E74A /* Cryptography */,
 				1D5E39B21918D21B0041E74A /* Supporting Files */,
 			);
 			path = MTKTools;
@@ -121,27 +203,80 @@
 			children = (
 				1D5E39B31918D21B0041E74A /* MTKTools-Info.plist */,
 				1D5E39B41918D21B0041E74A /* InfoPlist.strings */,
-				1D5E39B71918D21B0041E74A /* MTKTools-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1D5E39C61918D21B0041E74A /* MTKToolsTests */ = {
+		1D5E39E21918E1750041E74A /* MTKToolsTests */ = {
 			isa = PBXGroup;
 			children = (
-				1D5E39CC1918D21B0041E74A /* MTKToolsTests.m */,
-				1D5E39C71918D21B0041E74A /* Supporting Files */,
+				1D5E39F21918E1D70041E74A /* MTKBitwiseOperationTest.m */,
+				1D5E39F41918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m */,
+				1D5E39F61918E4890041E74A /* MTKBitwiseOperationBigTest.m */,
+				1D5E3A0819191B2C0041E74A /* MTKAESCryptographyTest.m */,
+				1D5E3A2C1919EFB70041E74A /* MTKAESBigTest.m */,
+				1D5E3A1319192C460041E74A /* MTKMiniScrambleTest.m */,
+				1D5E3A2E1919F00B0041E74A /* MTKMiniScrambleBigTest.m */,
+				1D5E3A301919F2F50041E74A /* MTKFileStatTest.m */,
+				1D5E3A36191A03460041E74A /* MTKStringPathTest.m */,
+				1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */,
+				1D5E39E31918E1750041E74A /* Supporting Files */,
 			);
 			path = MTKToolsTests;
 			sourceTree = "<group>";
 		};
-		1D5E39C71918D21B0041E74A /* Supporting Files */ = {
+		1D5E39E31918E1750041E74A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1D5E39C81918D21B0041E74A /* MTKToolsTests-Info.plist */,
-				1D5E39C91918D21B0041E74A /* InfoPlist.strings */,
+				1D5E39E41918E1750041E74A /* MTKToolsTests-Info.plist */,
+				1D5E39E51918E1750041E74A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1D5E3A1519192F410041E74A /* Cryptography */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E39D71918D6930041E74A /* NSData+MTKBitwiseOperations.h */,
+				1D5E39D81918D6930041E74A /* NSData+MTKBitwiseOperations.m */,
+				1D5E39F81918F9D80041E74A /* NSData+MTKSecureHashing.h */,
+				1D5E39F91918F9D80041E74A /* NSData+MTKSecureHashing.m */,
+				1D5E39FC1919061C0041E74A /* NSData+MTKHMAC.h */,
+				1D5E39FD1919061C0041E74A /* NSData+MTKHMAC.m */,
+				1D5E3A001919143D0041E74A /* NSData+MTKRandomBytes.h */,
+				1D5E3A011919143D0041E74A /* NSData+MTKRandomBytes.m */,
+				1D5E3A04191919000041E74A /* NSData+MTKAES.h */,
+				1D5E3A05191919000041E74A /* NSData+MTKAES.m */,
+				1D5E3A0F191927D30041E74A /* NSData+MTKMiniScramble.h */,
+				1D5E3A10191927D30041E74A /* NSData+MTKMiniScramble.m */,
+			);
+			name = Cryptography;
+			sourceTree = "<group>";
+		};
+		1D5E3A1E191950570041E74A /* Streams */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E3A1F191950720041E74A /* MTKFileInputStream.h */,
+				1D5E3A20191950720041E74A /* MTKFileInputStream.m */,
+			);
+			name = Streams;
+			sourceTree = "<group>";
+		};
+		1D5E3A2719195FFE0041E74A /* Archives */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E3A1619192F680041E74A /* NSData+MTKCompression.h */,
+				1D5E3A1719192F680041E74A /* NSData+MTKCompression.m */,
+				1D5E3A38191A04F60041E74A /* NSURL+MTKRelativePath.h */,
+				1D5E3A39191A04F60041E74A /* NSURL+MTKRelativePath.m */,
+				1D5E3A32191A014A0041E74A /* NSString+MTKRelativePath.h */,
+				1D5E3A33191A014A0041E74A /* NSString+MTKRelativePath.m */,
+				1D5E3A28191960130041E74A /* MTKArchivedFile.h */,
+				1D5E3A29191960130041E74A /* MTKArchivedFile.m */,
+				1D5E3A3C191A13310041E74A /* MTKUnixArchive.h */,
+				1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */,
+			);
+			name = Archives;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +286,19 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D5E3A1819192F680041E74A /* NSData+MTKCompression.h in Headers */,
+				1D5E39D91918D6930041E74A /* NSData+MTKBitwiseOperations.h in Headers */,
+				1D5E39FE1919061C0041E74A /* NSData+MTKHMAC.h in Headers */,
+				1D5E3A21191950720041E74A /* MTKFileInputStream.h in Headers */,
+				1D5E3A34191A014A0041E74A /* NSString+MTKRelativePath.h in Headers */,
+				1D5E3A3A191A04F60041E74A /* NSURL+MTKRelativePath.h in Headers */,
+				1D5E3A06191919000041E74A /* NSData+MTKAES.h in Headers */,
+				1D5E3A2A191960130041E74A /* MTKArchivedFile.h in Headers */,
+				1D5E39FA1918F9D80041E74A /* NSData+MTKSecureHashing.h in Headers */,
+				1D5E3A021919143D0041E74A /* NSData+MTKRandomBytes.h in Headers */,
+				1D5E39F11918E1A80041E74A /* MTKTools.h in Headers */,
+				1D5E3A11191927D30041E74A /* NSData+MTKMiniScramble.h in Headers */,
+				1D5E3A3E191A13310041E74A /* MTKUnixArchive.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,23 +323,23 @@
 			productReference = 1D5E39A81918D21B0041E74A /* MTKTools.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		1D5E39BE1918D21B0041E74A /* MTKToolsTests */ = {
+		1D5E39DE1918E1750041E74A /* MTKToolsTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D5E39D31918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */;
+			buildConfigurationList = 1D5E39ED1918E1750041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */;
 			buildPhases = (
-				1D5E39BB1918D21B0041E74A /* Sources */,
-				1D5E39BC1918D21B0041E74A /* Frameworks */,
-				1D5E39BD1918D21B0041E74A /* Resources */,
+				1D5E39DB1918E1750041E74A /* Sources */,
+				1D5E39DC1918E1750041E74A /* Frameworks */,
+				1D5E39DD1918E1750041E74A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1D5E39C41918D21B0041E74A /* PBXTargetDependency */,
+				1D5E39EC1918E1750041E74A /* PBXTargetDependency */,
 			);
 			name = MTKToolsTests;
 			productName = MTKToolsTests;
-			productReference = 1D5E39BF1918D21B0041E74A /* MTKToolsTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
+			productReference = 1D5E39DF1918E1750041E74A /* MTKToolsTests.octest */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,10 +347,11 @@
 		1D5E399F1918D21B0041E74A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MTK;
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Maxthon Chan";
 				TargetAttributes = {
-					1D5E39BE1918D21B0041E74A = {
+					1D5E39DE1918E1750041E74A = {
 						TestTargetID = 1D5E39A71918D21B0041E74A;
 					};
 				};
@@ -220,7 +369,7 @@
 			projectRoot = "";
 			targets = (
 				1D5E39A71918D21B0041E74A /* MTKTools */,
-				1D5E39BE1918D21B0041E74A /* MTKToolsTests */,
+				1D5E39DE1918E1750041E74A /* MTKToolsTests */,
 			);
 		};
 /* End PBXProject section */
@@ -234,11 +383,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D5E39BD1918D21B0041E74A /* Resources */ = {
+		1D5E39DD1918E1750041E74A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D5E39CB1918D21B0041E74A /* InfoPlist.strings in Resources */,
+				1D5E39E71918E1750041E74A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,25 +398,45 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D5E39BA1918D21B0041E74A /* MTKTools.m in Sources */,
+				1D5E3A031919143D0041E74A /* NSData+MTKRandomBytes.m in Sources */,
+				1D5E3A35191A014A0041E74A /* NSString+MTKRelativePath.m in Sources */,
+				1D5E3A12191927D30041E74A /* NSData+MTKMiniScramble.m in Sources */,
+				1D5E3A07191919000041E74A /* NSData+MTKAES.m in Sources */,
+				1D5E3A3B191A04F60041E74A /* NSURL+MTKRelativePath.m in Sources */,
+				1D5E3A1919192F680041E74A /* NSData+MTKCompression.m in Sources */,
+				1D5E39FF1919061C0041E74A /* NSData+MTKHMAC.m in Sources */,
+				1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */,
+				1D5E39FB1918F9D80041E74A /* NSData+MTKSecureHashing.m in Sources */,
+				1D5E3A3F191A13310041E74A /* MTKUnixArchive.m in Sources */,
+				1D5E3A22191950720041E74A /* MTKFileInputStream.m in Sources */,
+				1D5E3A2B191960130041E74A /* MTKArchivedFile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1D5E39BB1918D21B0041E74A /* Sources */ = {
+		1D5E39DB1918E1750041E74A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D5E39CD1918D21B0041E74A /* MTKToolsTests.m in Sources */,
+				1D5E3A0919191B2C0041E74A /* MTKAESCryptographyTest.m in Sources */,
+				1D5E3A37191A03460041E74A /* MTKStringPathTest.m in Sources */,
+				1D5E3A1419192C460041E74A /* MTKMiniScrambleTest.m in Sources */,
+				1D5E39F51918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m in Sources */,
+				1D5E39F31918E1D70041E74A /* MTKBitwiseOperationTest.m in Sources */,
+				1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */,
+				1D5E3A311919F2F50041E74A /* MTKFileStatTest.m in Sources */,
+				1D5E3A2F1919F00B0041E74A /* MTKMiniScrambleBigTest.m in Sources */,
+				1D5E39F71918E4890041E74A /* MTKBitwiseOperationBigTest.m in Sources */,
+				1D5E3A2D1919EFB70041E74A /* MTKAESBigTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1D5E39C41918D21B0041E74A /* PBXTargetDependency */ = {
+		1D5E39EC1918E1750041E74A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1D5E39A71918D21B0041E74A /* MTKTools */;
-			targetProxy = 1D5E39C31918D21B0041E74A /* PBXContainerItemProxy */;
+			targetProxy = 1D5E39EB1918E1750041E74A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -280,10 +449,10 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1D5E39C91918D21B0041E74A /* InfoPlist.strings */ = {
+		1D5E39E51918E1750041E74A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1D5E39CA1918D21B0041E74A /* en */,
+				1D5E39E61918E1750041E74A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -368,9 +537,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
 				INFOPLIST_FILE = "MTKTools/MTKTools-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
@@ -383,51 +551,40 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
 				INFOPLIST_FILE = "MTKTools/MTKTools-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "@loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
 		};
-		1D5E39D41918D21B0041E74A /* Debug */ = {
+		1D5E39EE1918E1750041E74A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTKTools.framework/Versions/A/MTKTools";
-				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "MTKToolsTests/MTKToolsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
-		1D5E39D51918D21B0041E74A /* Release */ = {
+		1D5E39EF1918E1750041E74A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MTKTools.framework/Versions/A/MTKTools";
-				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
 					"$(inherited)",
 				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "MTKTools/MTKTools-Prefix.pch";
 				INFOPLIST_FILE = "MTKToolsTests/MTKToolsTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
+				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -451,11 +608,11 @@
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		1D5E39D31918D21B0041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */ = {
+		1D5E39ED1918E1750041E74A /* Build configuration list for PBXNativeTarget "MTKToolsTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1D5E39D41918D21B0041E74A /* Debug */,
-				1D5E39D51918D21B0041E74A /* Release */,
+				1D5E39EE1918E1750041E74A /* Debug */,
+				1D5E39EF1918E1750041E74A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

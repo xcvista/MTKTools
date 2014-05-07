@@ -8,6 +8,27 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MTKTools : NSObject
+#pragma mark - Cryptography module (MSBooster Cryptography)
+#import <MTKTools/NSData+MTKBitwiseOperations.h>
+#import <MTKTools/NSData+MTKSecureHashing.h>
+#import <MTKTools/NSData+MTKHMAC.h>
+#import <MTKTools/NSData+MTKRandomBytes.h>
+#import <MTKTools/NSData+MTKAES.h>
+#import <MTKTools/NSData+MTKMiniScramble.h>
 
-@end
+#pragma mark - Archive module (MSBooster Archiver)
+#import <MTKTools/NSData+MTKCompression.h>
+#import <MTKTools/NSString+MTKRelativePath.h>
+#import <MTKTools/NSURL+MTKRelativePath.h>
+#import <MTKTools/MTKArchivedFile.h>
+#import <MTKTools/MTKUnixArchive.h>
+
+#pragma mark - Streams module (MSNetworking Streams)
+
+#pragma mark - Networking module (MSNetworking Networking)
+
+#pragma mark - Math module (GNU MP)
+
+#pragma mark - Object Archiver (CGIJSONObject Archiving)
+
+#pragma mark - Object Serialization (CGIJSONObject Serializing)
