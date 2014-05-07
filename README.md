@@ -1,5 +1,8 @@
 # MTKTools
 
+[![Build Status](https://travis-ci.org/xcvista/MTKTools.svg?branch=master)]
+(https://travis-ci.org/xcvista/MTKTools)
+
 MTKTools is a rollup of my existing support libraries for Objective-C program
 language. Libraries rolled up includes:
 
