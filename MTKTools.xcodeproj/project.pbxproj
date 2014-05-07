@@ -51,6 +51,8 @@
 		1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */; };
 		1D5E3A46191A26580041E74A /* MTKArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A44191A26580041E74A /* MTKArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A45191A26580041E74A /* MTKArchive.m */; };
+		1D5E3A4B191A40890041E74A /* NSObject+MTKKeyDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */; };
+		1D5E3A4C191A40890041E74A /* NSObject+MTKKeyDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +122,8 @@
 		1D5E3A43191A1F690041E74A /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 		1D5E3A44191A26580041E74A /* MTKArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKArchive.h; sourceTree = "<group>"; };
 		1D5E3A45191A26580041E74A /* MTKArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKArchive.m; sourceTree = "<group>"; };
+		1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKKeyDiscovery.h"; sourceTree = "<group>"; };
+		1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKKeyDiscovery.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				1D5E39B81918D21B0041E74A /* MTKTools.h */,
+				1D5E3A48191A3F9E0041E74A /* Serialization */,
 				1D5E3A2719195FFE0041E74A /* Archives */,
 				1D5E3A1E191950570041E74A /* Streams */,
 				1D5E3A1519192F410041E74A /* Cryptography */,
@@ -287,6 +292,15 @@
 			name = Archives;
 			sourceTree = "<group>";
 		};
+		1D5E3A48191A3F9E0041E74A /* Serialization */ = {
+			isa = PBXGroup;
+			children = (
+				1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */,
+				1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */,
+			);
+			name = Serialization;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -308,6 +322,7 @@
 				1D5E39F11918E1A80041E74A /* MTKTools.h in Headers */,
 				1D5E3A11191927D30041E74A /* NSData+MTKMiniScramble.h in Headers */,
 				1D5E3A3E191A13310041E74A /* MTKUnixArchive.h in Headers */,
+				1D5E3A4B191A40890041E74A /* NSObject+MTKKeyDiscovery.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +427,7 @@
 				1D5E3A12191927D30041E74A /* NSData+MTKMiniScramble.m in Sources */,
 				1D5E3A07191919000041E74A /* NSData+MTKAES.m in Sources */,
 				1D5E3A3B191A04F60041E74A /* NSURL+MTKRelativePath.m in Sources */,
+				1D5E3A4C191A40890041E74A /* NSObject+MTKKeyDiscovery.m in Sources */,
 				1D5E3A1919192F680041E74A /* NSData+MTKCompression.m in Sources */,
 				1D5E39FF1919061C0041E74A /* NSData+MTKHMAC.m in Sources */,
 				1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */,

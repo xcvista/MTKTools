@@ -60,4 +60,21 @@
     }
 }
 
+- (void)replaceFile:(MTKArchivedFile *)file
+{
+    @synchronized (self)
+    {
+        NSUInteger idx;
+        for (idx = 0; idx < [_files count]; idx++)
+        {
+            if ([file.fileName isEqualToString:[_files[idx] fileName]])
+            {
+                _files[idx] = file;
+                return;
+            }
+        }
+        [_files addObject:file];
+    }
+}
+
 @end
