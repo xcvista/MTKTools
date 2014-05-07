@@ -51,8 +51,10 @@
 		1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */; };
 		1D5E3A46191A26580041E74A /* MTKArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A44191A26580041E74A /* MTKArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A45191A26580041E74A /* MTKArchive.m */; };
-		1D5E3A4B191A40890041E74A /* NSObject+MTKKeyDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */; };
+		1D5E3A4B191A40890041E74A /* NSObject+MTKKeyDiscovery.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D5E3A4C191A40890041E74A /* NSObject+MTKKeyDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */; };
+		1D5E3A50191A8A730041E74A /* MTKKeyDiscoveryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */; };
+		1D5E3A52191A9FAF0041E74A /* MTKKeyClassDetermination.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +126,8 @@
 		1D5E3A45191A26580041E74A /* MTKArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKArchive.m; sourceTree = "<group>"; };
 		1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKKeyDiscovery.h"; sourceTree = "<group>"; };
 		1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKKeyDiscovery.m"; sourceTree = "<group>"; };
+		1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKeyDiscoveryTest.m; sourceTree = "<group>"; };
+		1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKeyClassDetermination.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,6 +235,8 @@
 				1D5E3A301919F2F50041E74A /* MTKFileStatTest.m */,
 				1D5E3A36191A03460041E74A /* MTKStringPathTest.m */,
 				1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */,
+				1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */,
+				1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */,
 				1D5E39E31918E1750041E74A /* Supporting Files */,
 			);
 			path = MTKToolsTests;
@@ -450,7 +456,9 @@
 				1D5E39F31918E1D70041E74A /* MTKBitwiseOperationTest.m in Sources */,
 				1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */,
 				1D5E3A311919F2F50041E74A /* MTKFileStatTest.m in Sources */,
+				1D5E3A52191A9FAF0041E74A /* MTKKeyClassDetermination.m in Sources */,
 				1D5E3A2F1919F00B0041E74A /* MTKMiniScrambleBigTest.m in Sources */,
+				1D5E3A50191A8A730041E74A /* MTKKeyDiscoveryTest.m in Sources */,
 				1D5E39F71918E4890041E74A /* MTKBitwiseOperationBigTest.m in Sources */,
 				1D5E3A2D1919EFB70041E74A /* MTKAESBigTest.m in Sources */,
 			);

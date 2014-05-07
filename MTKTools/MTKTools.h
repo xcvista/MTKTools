@@ -31,5 +31,6 @@
 #pragma mark - Math module (GNU MP)
 
 #pragma mark - Object Archiver (CGIJSONObject Archiving)
+#import <MTKTools/NSObject+MTKKeyDiscovery.h>
 
 #pragma mark - Object Serialization (CGIJSONObject Serializing)
