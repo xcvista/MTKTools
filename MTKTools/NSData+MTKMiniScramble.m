@@ -19,10 +19,13 @@
     
     while ([odata length] < [self length])
     {
-        NSRange block = NSMakeRange([odata length], MIN([ks length], [self length] - [odata length]));
-        NSData *blockData = [self subdataWithRange:block];
-        [odata appendData:[blockData bitwiseXorWithData:ks]];
-        ks = [ks SHA512HMACWithKey:key];
+        @autoreleasepool
+        {
+            NSRange block = NSMakeRange([odata length], MIN([ks length], [self length] - [odata length]));
+            NSData *blockData = [self subdataWithRange:block];
+            [odata appendData:[blockData bitwiseXorWithData:ks]];
+            ks = [ks SHA512HMACWithKey:key];
+        }
     }
     
     return [odata copy];
