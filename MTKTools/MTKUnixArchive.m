@@ -47,7 +47,11 @@
 {
     NSMutableData *odata = [NSMutableData dataWithBytes:ARMAG length:SARMAG];
     for (MTKArchivedFile *file in _files)
-        [odata appendData:[file unixArchivedData]];
+    {
+        NSData *data = [file unixArchivedData];
+        if (data)
+            [odata appendData:data];
+    };
     
     return [odata copy];
 }
@@ -90,10 +94,63 @@
 
 @implementation MTKArchivedFile (MTKUnixArchive)
 
+- (id)initWithUnixArchiveBinaryData:(const void *)data bufferLength:(NSUInteger)length bytesUsed:(NSUInteger *)bytes
+{
+    const void *sp = data;
+    
+    if (!(self = [self init]))
+        return nil;
+    
+    if (length < sizeof(struct ar_hdr))
+        return self = nil;
+    
+    if (memcmp(((struct ar_hdr *)data)->ar_fmag, ARFMAG, 2))
+        return self = nil;
+    
+    char name[20];
+    time_t mtime;
+    uid_t uid;
+    gid_t gid;
+    mode_t mode;
+    size_t len;
+    
+    sscanf(data, "%16s%12ld%6u%6u%8ho%10lu", name, &mtime, &uid, &gid, &mode, &len);
+    
+    self.fileName = @(name);
+    self.modificationTime = [NSDate dateWithTimeIntervalSince1970:mtime];
+    self.owner = uid;
+    self.groupOwner = gid;
+    self.fileMode = mode;
+    
+    data += sizeof(struct ar_hdr);
+    length -= sizeof(struct ar_hdr);
+    
+    if (length < len)
+        return self = nil;
+    
+    self.data = [NSData dataWithBytes:data length:len];
+    
+    data += len;
+    length -= len;
+    
+    NSUInteger moved = data - sp;
+    
+    if (len && (moved & 1))
+        moved++;
+    
+    if (bytes)
+        *bytes = moved;
+    
+    return self;
+}
+
 - (NSData *)unixArchivedData
 {
+    if ([self.fileName length] > 16)
+        return nil;
+    
     NSMutableData *odata = [NSMutableData dataWithCapacity:[self.data length] + sizeof(struct ar_hdr)];
-    NSString *header = [NSString stringWithFormat:@"%16s%12ld%6u%6u%8o%10lu%2s",
+    NSString *header = [NSString stringWithFormat:@"%-16s%-12ld%-6u%-6u%-8o%-10lu%-2s",
                         [self.fileName UTF8String], (time_t)[self.modificationTime timeIntervalSince1970], self.owner, self.groupOwner, self.fileMode, [self.data length], ARFMAG];
     [odata appendData:[header dataUsingEncoding:NSUTF8StringEncoding]];
     [odata appendData:[self data]];

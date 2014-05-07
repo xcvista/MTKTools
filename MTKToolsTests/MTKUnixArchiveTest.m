@@ -23,10 +23,10 @@
     // Put setup code here. This method is called before the invocation of each test method in the class.
     
     self.archive = [@"!<arch>\n"
-                     "test.txt        0           501   20    100644  8         `\n"
-                     "testing\n"
                      "test2.txt       0           501   20    100644  5         `\n"
-                     "test2\n" dataUsingEncoding:NSUTF8StringEncoding];
+                     "test2\n"
+                     "test.txt        0           501   20    100644  8         `\n"
+                     "testing\n" dataUsingEncoding:NSUTF8StringEncoding];
 }
 
 - (void)tearDown
@@ -52,7 +52,7 @@
     
     MTKArchivedFile *test2 = [archive fileNamed:@"test2.txt"];
     STAssertNotNil(test2, nil);
-    STAssertEqualObjects(test.data, [@"test2" dataUsingEncoding:NSUTF8StringEncoding], nil);
+    STAssertEqualObjects(test2.data, [@"test2" dataUsingEncoding:NSUTF8StringEncoding], nil);
 }
 
 - (void)testArchiving
@@ -74,8 +74,8 @@
     test2.data = [@"test2" dataUsingEncoding:NSUTF8StringEncoding];
     
     MTKUnixArchive *archive = [MTKUnixArchive archive];
-    [archive addFile:test];
     [archive addFile:test2];
+    [archive addFile:test];
     
     STAssertEqualObjects([archive archiveData], self.archive, nil);
 }
