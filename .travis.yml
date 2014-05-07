@@ -1,0 +1,4 @@
+
+language: objective-c
+xcode_project: MTKTools.xcodeproj
+xcode_scheme: MTKTools

@@ -71,7 +71,7 @@
 		1D5E39B51918D21B0041E74A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D5E39B81918D21B0041E74A /* MTKTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKTools.h; sourceTree = "<group>"; };
 		1D5E39C01918D21B0041E74A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1D5E39D61918D2C80041E74A /* README */ = {isa = PBXFileReference; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1D5E39D61918D2C80041E74A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		1D5E39D71918D6930041E74A /* NSData+MTKBitwiseOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MTKBitwiseOperations.h"; sourceTree = "<group>"; };
 		1D5E39D81918D6930041E74A /* NSData+MTKBitwiseOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MTKBitwiseOperations.m"; sourceTree = "<group>"; };
 		1D5E39DF1918E1750041E74A /* MTKToolsTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MTKToolsTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +115,7 @@
 		1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKUnixArchive.m; sourceTree = "<group>"; };
 		1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKUnixArchiveTest.m; sourceTree = "<group>"; };
 		1D5E3A42191A1E320041E74A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		1D5E3A43191A1F690041E74A /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,7 +144,8 @@
 		1D5E399E1918D21B0041E74A = {
 			isa = PBXGroup;
 			children = (
-				1D5E39D61918D2C80041E74A /* README */,
+				1D5E39D61918D2C80041E74A /* README.md */,
+				1D5E3A43191A1F690041E74A /* .travis.yml */,
 				1D5E3A42191A1E320041E74A /* .gitignore */,
 				1D5E39B11918D21B0041E74A /* MTKTools */,
 				1D5E39E21918E1750041E74A /* MTKToolsTests */,
