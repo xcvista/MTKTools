@@ -12,6 +12,9 @@
  @c MTKFileInputStream is an @c NSInputStream that wraps around a file handler.
  */
 @interface MTKFileInputStream : NSInputStream
+{
+    int _fd;
+}
 
 /**
  Initialized the new @c MTKFileInputStream object.

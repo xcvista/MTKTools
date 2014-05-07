@@ -20,6 +20,7 @@
 #import <MTKTools/NSData+MTKCompression.h>
 #import <MTKTools/NSString+MTKRelativePath.h>
 #import <MTKTools/NSURL+MTKRelativePath.h>
+#import <MTKTools/MTKArchive.h>
 #import <MTKTools/MTKArchivedFile.h>
 #import <MTKTools/MTKUnixArchive.h>
 

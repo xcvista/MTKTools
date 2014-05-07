@@ -9,9 +9,6 @@
 #import "MTKFileInputStream.h"
 
 @implementation MTKFileInputStream
-{
-    int _fd;
-}
 
 - (id)initWithFileHandler:(int)fd
 {

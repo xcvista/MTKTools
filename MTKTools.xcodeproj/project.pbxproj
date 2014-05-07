@@ -49,6 +49,8 @@
 		1D5E3A3E191A13310041E74A /* MTKUnixArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A3C191A13310041E74A /* MTKUnixArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1D5E3A3F191A13310041E74A /* MTKUnixArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */; };
 		1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */; };
+		1D5E3A46191A26580041E74A /* MTKArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A44191A26580041E74A /* MTKArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A45191A26580041E74A /* MTKArchive.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,8 @@
 		1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKUnixArchiveTest.m; sourceTree = "<group>"; };
 		1D5E3A42191A1E320041E74A /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		1D5E3A43191A1F690041E74A /* .travis.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .travis.yml; sourceTree = "<group>"; };
+		1D5E3A44191A26580041E74A /* MTKArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKArchive.h; sourceTree = "<group>"; };
+		1D5E3A45191A26580041E74A /* MTKArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKArchive.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,6 +279,8 @@
 				1D5E3A33191A014A0041E74A /* NSString+MTKRelativePath.m */,
 				1D5E3A28191960130041E74A /* MTKArchivedFile.h */,
 				1D5E3A29191960130041E74A /* MTKArchivedFile.m */,
+				1D5E3A44191A26580041E74A /* MTKArchive.h */,
+				1D5E3A45191A26580041E74A /* MTKArchive.m */,
 				1D5E3A3C191A13310041E74A /* MTKUnixArchive.h */,
 				1D5E3A3D191A13310041E74A /* MTKUnixArchive.m */,
 			);
@@ -290,6 +296,7 @@
 			files = (
 				1D5E3A1819192F680041E74A /* NSData+MTKCompression.h in Headers */,
 				1D5E39D91918D6930041E74A /* NSData+MTKBitwiseOperations.h in Headers */,
+				1D5E3A46191A26580041E74A /* MTKArchive.h in Headers */,
 				1D5E39FE1919061C0041E74A /* NSData+MTKHMAC.h in Headers */,
 				1D5E3A21191950720041E74A /* MTKFileInputStream.h in Headers */,
 				1D5E3A34191A014A0041E74A /* NSString+MTKRelativePath.h in Headers */,
@@ -409,6 +416,7 @@
 				1D5E39FF1919061C0041E74A /* NSData+MTKHMAC.m in Sources */,
 				1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */,
 				1D5E39FB1918F9D80041E74A /* NSData+MTKSecureHashing.m in Sources */,
+				1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */,
 				1D5E3A3F191A13310041E74A /* MTKUnixArchive.m in Sources */,
 				1D5E3A22191950720041E74A /* MTKFileInputStream.m in Sources */,
 				1D5E3A2B191960130041E74A /* MTKArchivedFile.m in Sources */,
