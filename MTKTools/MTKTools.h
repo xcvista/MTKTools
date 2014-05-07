@@ -32,5 +32,6 @@
 
 #pragma mark - Object Archiver (CGIJSONObject Archiving)
 #import <MTKTools/NSObject+MTKKeyDiscovery.h>
+#import <MTKTools/NSObject+MTKMethodSwizzling.h>
 
 #pragma mark - Object Serialization (CGIJSONObject Serializing)

@@ -55,6 +55,9 @@
 		1D5E3A4C191A40890041E74A /* NSObject+MTKKeyDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */; };
 		1D5E3A50191A8A730041E74A /* MTKKeyDiscoveryTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */; };
 		1D5E3A52191A9FAF0041E74A /* MTKKeyClassDetermination.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */; };
+		1D5E3A55191AA2060041E74A /* NSObject+MTKMethodSwizzling.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D5E3A53191AA2060041E74A /* NSObject+MTKMethodSwizzling.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1D5E3A56191AA2060041E74A /* NSObject+MTKMethodSwizzling.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A54191AA2060041E74A /* NSObject+MTKMethodSwizzling.m */; };
+		1D5E3A58191AA3070041E74A /* MTKMethodSwappingTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A57191AA3070041E74A /* MTKMethodSwappingTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,6 +131,9 @@
 		1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKKeyDiscovery.m"; sourceTree = "<group>"; };
 		1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKeyDiscoveryTest.m; sourceTree = "<group>"; };
 		1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKKeyClassDetermination.m; sourceTree = "<group>"; };
+		1D5E3A53191AA2060041E74A /* NSObject+MTKMethodSwizzling.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MTKMethodSwizzling.h"; sourceTree = "<group>"; };
+		1D5E3A54191AA2060041E74A /* NSObject+MTKMethodSwizzling.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKMethodSwizzling.m"; sourceTree = "<group>"; };
+		1D5E3A57191AA3070041E74A /* MTKMethodSwappingTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKMethodSwappingTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,6 +243,7 @@
 				1D5E3A40191A15AE0041E74A /* MTKUnixArchiveTest.m */,
 				1D5E3A4F191A8A730041E74A /* MTKKeyDiscoveryTest.m */,
 				1D5E3A51191A9FAF0041E74A /* MTKKeyClassDetermination.m */,
+				1D5E3A57191AA3070041E74A /* MTKMethodSwappingTest.m */,
 				1D5E39E31918E1750041E74A /* Supporting Files */,
 			);
 			path = MTKToolsTests;
@@ -303,6 +310,8 @@
 			children = (
 				1D5E3A49191A40890041E74A /* NSObject+MTKKeyDiscovery.h */,
 				1D5E3A4A191A40890041E74A /* NSObject+MTKKeyDiscovery.m */,
+				1D5E3A53191AA2060041E74A /* NSObject+MTKMethodSwizzling.h */,
+				1D5E3A54191AA2060041E74A /* NSObject+MTKMethodSwizzling.m */,
 			);
 			name = Serialization;
 			sourceTree = "<group>";
@@ -318,6 +327,7 @@
 				1D5E39D91918D6930041E74A /* NSData+MTKBitwiseOperations.h in Headers */,
 				1D5E3A46191A26580041E74A /* MTKArchive.h in Headers */,
 				1D5E39FE1919061C0041E74A /* NSData+MTKHMAC.h in Headers */,
+				1D5E3A55191AA2060041E74A /* NSObject+MTKMethodSwizzling.h in Headers */,
 				1D5E3A21191950720041E74A /* MTKFileInputStream.h in Headers */,
 				1D5E3A34191A014A0041E74A /* NSString+MTKRelativePath.h in Headers */,
 				1D5E3A3A191A04F60041E74A /* NSURL+MTKRelativePath.h in Headers */,
@@ -436,6 +446,7 @@
 				1D5E3A4C191A40890041E74A /* NSObject+MTKKeyDiscovery.m in Sources */,
 				1D5E3A1919192F680041E74A /* NSData+MTKCompression.m in Sources */,
 				1D5E39FF1919061C0041E74A /* NSData+MTKHMAC.m in Sources */,
+				1D5E3A56191AA2060041E74A /* NSObject+MTKMethodSwizzling.m in Sources */,
 				1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */,
 				1D5E39FB1918F9D80041E74A /* NSData+MTKSecureHashing.m in Sources */,
 				1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */,
@@ -454,6 +465,7 @@
 				1D5E3A1419192C460041E74A /* MTKMiniScrambleTest.m in Sources */,
 				1D5E39F51918E4000041E74A /* MTKBitwiseOperationIUnalignedTest.m in Sources */,
 				1D5E39F31918E1D70041E74A /* MTKBitwiseOperationTest.m in Sources */,
+				1D5E3A58191AA3070041E74A /* MTKMethodSwappingTest.m in Sources */,
 				1D5E3A41191A15AE0041E74A /* MTKUnixArchiveTest.m in Sources */,
 				1D5E3A311919F2F50041E74A /* MTKFileStatTest.m in Sources */,
 				1D5E3A52191A9FAF0041E74A /* MTKKeyClassDetermination.m in Sources */,
