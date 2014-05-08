@@ -8,6 +8,22 @@
 
 #import <Foundation/Foundation.h>
 
+/**
+ Overrides class of a key when detecting. This macro expands into an instance
+ method definition.
+ 
+ @warning For coders that does not support arbitiary object coding, encoding an
+ object that does not explicitly support coding with class hints will be
+ problematic.
+ 
+ @param _key   The key to be overridden.
+ @param _class The class it should return.
+ */
+#define MTKClassForKey(_key, _class) \
+- (Class)classForKey ##_key { \
+    return [_class class]; \
+}
+
 @interface NSObject (MTKKeyDiscovery)
 
 /**

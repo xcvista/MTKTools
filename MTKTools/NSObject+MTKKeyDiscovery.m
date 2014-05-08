@@ -7,8 +7,10 @@
 //
 
 #import "NSObject+MTKKeyDiscovery.h"
+#import "MTKCommon.h"
 
 #import <objc/runtime.h>
+#import <objc/message.h>
 
 @implementation NSObject (MTKKeyDiscovery)
 
@@ -34,6 +36,11 @@
 
 - (Class)classForKey:(NSString *)key
 {
+    // Check for overridden keys
+    SEL overrideMethod = NSSelectorFromString(MTKString(@"classForKey%@", key));
+    if ([self respondsToSelector:overrideMethod])
+        return ((Class (*)(id, SEL))objc_msgSend)(self, overrideMethod);
+    
     objc_property_t property = class_getProperty([self class], [key UTF8String]);
     
     if (!property)

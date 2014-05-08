@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
+#import <MTKTools/MTKCommon.h>
+
 #pragma mark - Cryptography module (MSBooster Cryptography)
 #import <MTKTools/NSData+MTKBitwiseOperations.h>
 #import <MTKTools/NSData+MTKSecureHashing.h>

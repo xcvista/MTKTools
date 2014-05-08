@@ -15,6 +15,9 @@ static inline BOOL _MTKSwapMethods(Class class, SEL original, SEL another)
     Method orig = class_getInstanceMethod(class, original);
     Method anot = class_getInstanceMethod(class, another);
     
+    if (!orig || !anot)
+        return NO;
+    
     BOOL didAddMethod = class_addMethod(class,
                                         original,
                                         method_getImplementation(anot),
