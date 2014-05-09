@@ -1,23 +1,24 @@
 //
-//  MTKFileInputStream.h
+//  MTKFileOutputStream.h
 //  MTKTools
 //
-//  Created by Maxthon Chan on 5/7/14.
+//  Created by Maxthon Chan on 5/8/14.
 //  Copyright (c) 2014 Maxthon Chan. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
 /**
- @c MTKFileInputStream is an @c NSInputStream that wraps around a file handler.
+ @c MTKOutputInputStream is an @c NSOutputStream that wraps around a file
+ handler.
  */
-@interface MTKFileInputStream : NSInputStream
+@interface MTKFileOutputStream : NSOutputStream
 {
     int _fd;
 }
 
 /**
- Initialized the new @c MTKFileInputStream object.
+ Initialized the new @c MTKFileOutputStream object.
  
  @param fd File descriptor.
  

@@ -62,6 +62,10 @@
 		1D5E3A5C191B91520041E74A /* NSObject+MTKKeyedEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D5E3A5A191B91520041E74A /* NSObject+MTKKeyedEncoding.m */; };
 		1DFDC052191BC8D2002FB0F4 /* MTKCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFDC051191BC8C8002FB0F4 /* MTKCommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1DFDC054191BD905002FB0F4 /* MTKClassDetectionOverrideTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDC053191BD905002FB0F4 /* MTKClassDetectionOverrideTest.m */; };
+		1DFDC057191BDAB9002FB0F4 /* MTKFileOutputStream.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFDC055191BDAB9002FB0F4 /* MTKFileOutputStream.h */; };
+		1DFDC058191BDAB9002FB0F4 /* MTKFileOutputStream.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDC056191BDAB9002FB0F4 /* MTKFileOutputStream.m */; };
+		1DFDC05B191BDB0D002FB0F4 /* MTKElbow.h in Headers */ = {isa = PBXBuildFile; fileRef = 1DFDC059191BDB0D002FB0F4 /* MTKElbow.h */; };
+		1DFDC05C191BDB0D002FB0F4 /* MTKElbow.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DFDC05A191BDB0D002FB0F4 /* MTKElbow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -142,6 +146,10 @@
 		1D5E3A5A191B91520041E74A /* NSObject+MTKKeyedEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MTKKeyedEncoding.m"; sourceTree = "<group>"; };
 		1DFDC051191BC8C8002FB0F4 /* MTKCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTKCommon.h; sourceTree = "<group>"; };
 		1DFDC053191BD905002FB0F4 /* MTKClassDetectionOverrideTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKClassDetectionOverrideTest.m; sourceTree = "<group>"; };
+		1DFDC055191BDAB9002FB0F4 /* MTKFileOutputStream.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKFileOutputStream.h; sourceTree = "<group>"; };
+		1DFDC056191BDAB9002FB0F4 /* MTKFileOutputStream.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKFileOutputStream.m; sourceTree = "<group>"; };
+		1DFDC059191BDB0D002FB0F4 /* MTKElbow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MTKElbow.h; sourceTree = "<group>"; };
+		1DFDC05A191BDB0D002FB0F4 /* MTKElbow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MTKElbow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -292,6 +300,10 @@
 			children = (
 				1D5E3A1F191950720041E74A /* MTKFileInputStream.h */,
 				1D5E3A20191950720041E74A /* MTKFileInputStream.m */,
+				1DFDC055191BDAB9002FB0F4 /* MTKFileOutputStream.h */,
+				1DFDC056191BDAB9002FB0F4 /* MTKFileOutputStream.m */,
+				1DFDC059191BDB0D002FB0F4 /* MTKElbow.h */,
+				1DFDC05A191BDB0D002FB0F4 /* MTKElbow.m */,
 			);
 			name = Streams;
 			sourceTree = "<group>";
@@ -344,10 +356,12 @@
 				1DFDC052191BC8D2002FB0F4 /* MTKCommon.h in Headers */,
 				1D5E3A5B191B91520041E74A /* NSObject+MTKKeyedEncoding.h in Headers */,
 				1D5E3A34191A014A0041E74A /* NSString+MTKRelativePath.h in Headers */,
+				1DFDC05B191BDB0D002FB0F4 /* MTKElbow.h in Headers */,
 				1D5E3A3A191A04F60041E74A /* NSURL+MTKRelativePath.h in Headers */,
 				1D5E3A06191919000041E74A /* NSData+MTKAES.h in Headers */,
 				1D5E3A2A191960130041E74A /* MTKArchivedFile.h in Headers */,
 				1D5E39FA1918F9D80041E74A /* NSData+MTKSecureHashing.h in Headers */,
+				1DFDC057191BDAB9002FB0F4 /* MTKFileOutputStream.h in Headers */,
 				1D5E3A021919143D0041E74A /* NSData+MTKRandomBytes.h in Headers */,
 				1D5E39F11918E1A80041E74A /* MTKTools.h in Headers */,
 				1D5E3A11191927D30041E74A /* NSData+MTKMiniScramble.h in Headers */,
@@ -463,6 +477,8 @@
 				1D5E3A56191AA2060041E74A /* NSObject+MTKMethodSwizzling.m in Sources */,
 				1D5E39DA1918D6930041E74A /* NSData+MTKBitwiseOperations.m in Sources */,
 				1D5E39FB1918F9D80041E74A /* NSData+MTKSecureHashing.m in Sources */,
+				1DFDC058191BDAB9002FB0F4 /* MTKFileOutputStream.m in Sources */,
+				1DFDC05C191BDB0D002FB0F4 /* MTKElbow.m in Sources */,
 				1D5E3A47191A26580041E74A /* MTKArchive.m in Sources */,
 				1D5E3A3F191A13310041E74A /* MTKUnixArchive.m in Sources */,
 				1D5E3A22191950720041E74A /* MTKFileInputStream.m in Sources */,

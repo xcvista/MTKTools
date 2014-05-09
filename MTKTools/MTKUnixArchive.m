@@ -136,7 +136,7 @@
     
     NSUInteger moved = data - sp;
     
-    if (len && (moved & 1))
+    if (length && (moved & 1))
         moved++;
     
     if (bytes)

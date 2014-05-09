@@ -10,7 +10,7 @@
 
 @implementation MTKFileInputStream
 
-- (id)initWithFileHandler:(int)fd
+- (id)initWithFileDescriptor:(int)fd
 {
     if (!(self = [super init]))
         return nil;
